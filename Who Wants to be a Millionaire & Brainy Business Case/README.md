@@ -1,29 +1,36 @@
 # 🌟 Decision Tree and Business Case Analysis
 
-This repository contains the solutions and analysis for two decision-making scenarios: the **"Who Wants to Be a Millionaire?" strategy optimization** and the **Brainy Business Case**. Both scenarios leverage decision trees and Expected Monetary Value (EMV) to identify optimal strategies.
+This repository contains solutions to two complex decision-making scenarios that demonstrate the power of **decision trees** and **Expected Monetary Value (EMV)** calculations in identifying optimal strategies. The analyses are structured to provide actionable insights for strategic decision-making.
 
 ---
 
-## 📋 Project Overview
+## 🗂️ Project Overview
 
 ### **1. Who Wants to Be a Millionaire?**
-- **Objective**: Maximize expected winnings as a contestant in the game show.
-- **Key Highlights**:
-  - Used TreePlan to analyze probabilities and payoffs for various strategies.
-  - Determined the best course of action:
-    1. Answer the $500,000 question without using the "Phone a Friend" lifeline.
-    2. If successful, proceed to the $1,000,000 question and use the lifeline for maximum success probability.
+- **Objective**: Optimize strategy as a contestant on the game show to maximize winnings.
+- **Key Insights**:
+  1. **$500,000 Question**:
+     - Answer without using the "Phone a Friend" lifeline to preserve it for later.
+     - Success probability: **65%**, with an expected payout of **$661,200**.
+  2. **$1,000,000 Question**:
+     - If successful on the $500,000 question, proceed and use the lifeline to maximize the chance of success (**65%** probability).
+     - Risk trade-off: Potential fallback to $32,000 if unsuccessful, but the payout justifies the calculated risk.
 
 ---
 
 ### **2. Brainy Business Case**
-- **Objective**: Help **Charlotte Rothstein**, CEO of Cerebrosoft, decide whether to launch a new product (**Brainet**) and at what price.
-- **Key Highlights**:
-  - Constructed a decision tree using TreePlan to evaluate scenarios based on pricing strategies ($50, $40, $30) and market competition levels (severe, moderate, weak).
-  - Analyzed sales outcomes and determined the best strategy:
-    1. Launch Brainet.
-    2. Use the high pricing strategy ($50) to maximize EMV.
-  - The high-pricing strategy also achieved the highest rollback value.
+- **Objective**: Assist **Charlotte Rothstein**, CEO of Cerebrosoft, in deciding whether to launch the new product (**Brainet**) and selecting the best pricing strategy.
+- **Key Insights**:
+  1. **Launch Decision**:
+     - Launching Brainet is recommended to avoid the **$800,000 sunk cost loss** of abandoning the product.
+  2. **Pricing Strategy**:
+     - The **High Price Strategy ($50)** provides the highest EMV, balancing competition scenarios and maximizing revenue potential.
+  3. **Market Analysis**:
+     - Constructed decision trees to evaluate payoffs under different competition levels:
+       - Severe (20%), Moderate (70%), Weak (10%).
+       - Determined sales outcomes (High: 50,000 units, Medium: 30,000 units, Low: 20,000 units).
+  4. **Optimal Recommendation**:
+     - Adopt the **High Price ($50)** strategy as it achieves the highest rollback value, offering the best balance of risk and reward.
 
 ---
 
@@ -32,17 +39,20 @@ This repository contains the solutions and analysis for two decision-making scen
 | File Name                     | Description                                                  |
 |-------------------------------|--------------------------------------------------------------|
 | **`Decision_Tree.xlsx`**      | Excel file containing the TreePlan models for both scenarios.|
-| **`Final_Report.pdf`**        | Comprehensive report with detailed analysis and rationale.   |
-| **`Project_Instructions.pdf`**| Original instructions outlining the scenarios and requirements.|
+| **`Final_Report.pdf`**        | Comprehensive report with detailed analysis and recommendations.|
+| **`Project_Instructions.pdf`**| Original problem descriptions and assignment requirements.   |
 
 ---
 
 ## 🔧 Tools and Techniques
+
 - **Decision Trees**:
-  - Constructed using TreePlan in Excel.
+  - Created using the **TreePlan** add-in for Excel for structured decision analysis.
 - **Expected Monetary Value (EMV)**:
-  - Calculated for all scenarios to identify optimal decisions.
+  - Used to calculate the expected outcomes for each scenario.
 - **Scenario Analysis**:
-  - Evaluated multiple pricing and competition outcomes for the business case.
+  - Modeled various outcomes for pricing strategies and competition levels.
+- **Risk Analysis**:
+  - Evaluated trade-offs between risk and reward, highlighting optimal strategies for each case.
 
 ---
